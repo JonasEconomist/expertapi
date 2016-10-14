@@ -22,3 +22,9 @@ This endpoint produces results from extraction (relevant terms and concepts), de
 * Mode defaults to full analysis, specify ```categorization``` or ```extraction_default_mining``` to hit the other endpoints.
 * The system will write the output into the output folder prefixed by result type and timestamp.
 
+#### EXAMPLE
+
+* ```./expertapi --nid=21708723```
+* ```./expertapi --nid=21708723 --mode=categorization```
+* ```./expertapi --nid=21708723 --mode=extraction_default_mining```
+
