@@ -34,7 +34,7 @@ func main() {
 
 func writeResponseToFile(resp string) {
 	t := time.Now()
-	filename := fmt.Sprintf("output/%s_%s.xml", mode, t.Format("20060102150405"))
+	filename := fmt.Sprintf("output/%s_%s_%s.xml", mode, nid, t.Format("20060102150405"))
 	target, _ := os.Create(filename)
 	defer target.Close()
 	_, err := target.WriteString(resp)
